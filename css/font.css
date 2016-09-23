@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('../font/ux_1473294002_6497056/iconfont.eot?t=1473294003'); /* IE9*/
+    src: url('../font/ux_1473294002_6497056/iconfont.eot?t=1473294003#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/ux_1473294002_6497056/iconfont.woff?t=1473294003') format('woff'), /* chrome, firefox */
+    url('../font/ux_1473294002_6497056/iconfont.ttf?t=1473294003') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/ux_1473294002_6497056/iconfont.svg?t=1473294003#iconfont') format('svg'); /* iOS 4.1- */
+}
+@font-face {
+    font-family: "iconfont1";
+    src: url('../font/ux_1473478016_3410285/iconfont.eot?t=1473478017'); /* IE9*/
+    src: url('../font/ux_1473478016_3410285/iconfont.eot?t=1473478017#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/ux_1473478016_3410285/iconfont.woff?t=1473478017') format('woff'), /* chrome, firefox */
+    url('../font/ux_1473478016_3410285/iconfont.ttf?t=1473478017') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/ux_1473478016_3410285/iconfont.svg?t=1473478017#iconfont') format('svg'); /* iOS 4.1- */
+}
+.icon-lajitong:before {
+    font-family: "iconfont";
+    content: "\e62b";
+}
+.icon-baocun:before {
+    font-family: "iconfont";
+    content: "\e60c";
+}
+.icon-biaoqian:before {
+    font-family: "iconfont";
+    content: "\e68b";
+}
+.icon-caidanshu:before {
+    font-family: "iconfont";
+    content: "\e604";
+}
+.icon-caidanheng:before {
+    font-family: "iconfont";
+    content: "\e603";
+}
+.icon-iconfontfanhui:before {
+    font-family: "iconfont";
+    content: "\e61a";
+}
+.icon-xinjian:before {
+    font-family: "iconfont";
+    content: "\e601";
+}
+.icon-fangda:before {
+    font-family: "iconfont1";
+    font-size: 16px;
+    font-weight: 700;
+    content: "\e6ab";
+}

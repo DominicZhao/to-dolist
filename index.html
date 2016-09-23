@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="list">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="hea-left col-md-4">
+                    <span class="icon-xinjian" ng-click="addlie()">添加列表</span>
+                </div>
+                <div class="hea-center col-md-4">
+                    <div class="hea-tou"></div>
+                </div>
+                <div class="hea-right col-md-4">
+                    <span class="icon-caidanshu"></span>
+                </div>
+            </div>
+        </div>
+        <div class="miue">
+            <span>背景色：</span>
+            <div class="beise">
+                <div class="bei"></div>
+                <div class="bei"></div>
+                <div class="bei"></div>
+                <div class="bei"></div>
+            </div>
+            <span>字体颜色：</span>
+            <div class="beise">
+                <div class="zise"></div>
+                <div class="zise"></div>
+                <div class="zise"></div>
+                <div class="zise"></div>
+            </div>
+        </div>
+    </header>
+    <div class="concent">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="con-left col-lg-3">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="icon-fangda"></span></div>
+                            <input class="form-control" type="text" placeholder="搜索" ng-model="search">
+                        </div>
+                    </div>
+                    <div class="wanc" ng-click="isshow=false"><span class="icon-biaoqian"></span>已完成<span ng-bind="wancheng.length"></span></div>
+                    <label class="checkbox inline"  ng-repeat="item in dolist  | filter :search track by item.id">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1" ng-click="shanchu(item.id)">
+                        <input class="span1" type="text" placeholder="" ng-model="item.name" ng-blur="geizhi()" ng-focus="focus(item.id)">
+                    </label>
+                </div>
+                <div class="con-right col-lg-9" ng-show="isshow">
+                    <h2>{{conentnei.name}}</h2>
+                    <div class="add-con glyphicon glyphicon-plus" ng-click="addnei()">
+                    </div>
+                    <div class="list" ng-repeat="item in conentnei.son track by item.id">
+                        <div class="listcon">
+                            <span class="icon-biaoqian biaoqian" ng-click="done(item.id)"></span>
+                            <input type="text" ng-model="item.name" ng-blur="conBlur(item.id)">
+                            <span class="icon-lajitong remove" ng-click="removeCon(item.id)"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-right col-lg-9" ng-show="!isshow">
+                    <h2>已完成</h2>
+                    <div class="list" ng-repeat="item in wancheng track by item.id">
+                        <div class="listcon">
+                            <span class="icon-biaoqian biaoqian"></span>
+                            <input type="text" ng-model="item.name">
+                            <span class="icon-lajitong remove" ng-click="removedone(item.id)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+   /* localStorage.setItem("name","lisi");
+    localStorage.setItem("name","新建一");
+    var b=localStorage.getItem("name");*/
+
+</script>
+</html>

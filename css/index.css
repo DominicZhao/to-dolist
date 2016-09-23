@@ -1,0 +1,186 @@
+body,html,ul,li,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor:url('../imge/cursor.png'),auto;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+/******************************************************************************************/
+header{
+    width: 100%;
+    height: 50px;
+    background: #000;
+    line-height: 50px;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    z-index: 5;
+}
+.hea-left,.hea-right{
+    height: 50px;
+}
+header .container-fluid .row span{
+    padding:0 10px;
+    font-size: 18px;
+    /*cursor: default;*/
+}
+header .container-fluid .row .hea-center{
+    height: 50px;
+}
+.container-fluid .row .hea-center .hea-tou{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../imge/tou.jpg");
+    background-size: 50px 50px;
+}
+header .container-fluid .row .hea-right{
+    text-align: right;
+}
+.miue{
+    width: 200px;
+    height: 0px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    position: absolute;
+    top:50px;
+    right: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.miue span{
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+}
+.miue span:nth-of-type(2){
+    position: absolute;
+    top: 63px;
+    left: 0;
+}
+.beise{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+.beise .bei{
+    width: 40px;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.beise .bei:nth-of-type(1){
+    background: #000;
+}
+.beise .bei:nth-of-type(2){
+    background: #DEB887;
+}
+.beise .bei:nth-of-type(3){
+    background: #855E42;
+}
+.beise .bei:nth-of-type(4){
+    background: #93db70;
+}
+.beise:nth-of-type(2){
+    top:100px;
+}
+.beise .zise{
+    width: 40px;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.zise:nth-of-type(1){
+    background: #000;
+    color: #000;
+}
+.zise:nth-of-type(2){
+    background: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #fff;
+}
+.zise:nth-of-type(3){
+    background: red;
+    color: red;
+}
+.zise:nth-of-type(4){
+    background: #d9d919;
+    color: #d9d919;
+}
+/****************************************************************************/
+.concent{
+    width: 100%;
+    height: 750px;
+}
+.wanc{
+    font-size: 18px;
+    color: #fff;
+}
+.concent .container-fluid .row .con-left{
+    background: #000;
+    height:750px;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.container-fluid .row .con-left label{
+    height: 30px;
+    line-height: 30px;
+    color: #ccc;
+    border-bottom: 1px dashed #ccc;
+}
+#inlineCheckbox1{
+    margin: 8px;
+}
+.row .con-left label .span1{
+    width: 50%;
+    height: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 30px;
+    color: #fff;
+    background: #000;
+    border: none;
+}
+.concent .container-fluid .row .con-right{
+    background: #DEB887;
+    height: 750px;
+    padding: 10px;
+    position: relative;
+}
+h2{
+    height: 30px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dashed #fff;
+}
+.add-con{
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+}
+.listcon input{
+    outline: none;
+    background: #DEB887;
+    border: none;
+}
+.remove{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+}
+.listcon:hover .remove{
+    opacity: 1;
+    visibility: visible;
+}
